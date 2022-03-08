@@ -5,13 +5,22 @@
     <title>Title</title>
 </head>
 <body>
-<input type="text" id="thuan">
-<button onclick="lh()">ấn</button>
-<h1 id="hong"></h1>
 <script>
-    function lh() {
-        document.getElementById('hong').innerHTML=document.getElementById('thuan').value;
+    a=prompt("nhập biến a: ")
+    b=prompt("nhập biến b: ")
+    if((a%b)==0)
+    { alert("a chia hết cho b")}
+    else{
+        alert("a không chia hết cho b")
     }
+    let inputwidgh;
+    let inputheight;
+    inputwidgh=prompt("nhập biến width:");
+    inputheight=prompt(" nhập biến height:");
+    let widgh=parseInt(inputwidgh);
+    let height= parseInt( inputheight);
+    let area= widgh*height;
+    document.write("area= " + area);
 </script>
 </body>
 </html>
