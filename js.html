@@ -14,23 +14,24 @@
 <button onclick="chia()">division(/)</button>
 <p id="p"></p>
 <script>
+    let gon= document.getElementById('p');
     function cong() {
         let a= +document.getElementById('thuan').value;
         let b= +document.getElementById('hung').value;
         let sum= a+b;
-        document.getElementById('p').innerHTML=("sum= " +sum);
+        gon.innerHTML=("sum= " +sum);
     }
     function tru() {
         let a= +document.getElementById('thuan').value;
         let b= +document.getElementById('hung').value;
         let hieu= a-b;
-        document.getElementById('p').innerHTML=('hieu= ' +hieu);
+        gon.innerHTML=('hieu= ' +hieu);
     }
     function nhan() {
         let a= +document.getElementById('thuan').value;
         let b= +document.getElementById('hung').value;
         let tich= (a*b);
-        document.getElementById('p').innerHTML= ('tich = ' +tich);
+        gon.innerHTML= ('tich = ' +tich);
     }
     function chia(){
         let a= +document.getElementById('thuan').value;
