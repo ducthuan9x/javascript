@@ -5,8 +5,39 @@
     <title>Title</title>
 </head>
 <body>
-<button onclick="ad();">ấn</button>
+<input type="text" id="thuan">
+<input type="text" id="hung">
+<br>
+<button  onclick="cong()">addition(+)</button>
+<button onclick="tru()">subtraction(-)</button>
+<button onclick="nhan()">multiplication(*)</button>
+<button onclick="chia()">division(/)</button>
+<p id="p"></p>
 <script>
+    function cong() {
+        let a= +document.getElementById('thuan').value;
+        let b= +document.getElementById('hung').value;
+        let sum= a+b;
+        document.getElementById('p').innerHTML=("sum= " +sum);
+    }
+    function tru() {
+        let a= +document.getElementById('thuan').value;
+        let b= +document.getElementById('hung').value;
+        let hieu= a-b;
+        document.getElementById('p').innerHTML=('hieu= ' +hieu);
+    }
+    function nhan() {
+        let a= +document.getElementById('thuan').value;
+        let b= +document.getElementById('hung').value;
+        let tich= (a*b);
+        document.getElementById('p').innerHTML= ('tich = ' +tich);
+    }
+    function chia(){
+        let a= +document.getElementById('thuan').value;
+        let b= +document.getElementById('hung').value;
+        let thuong = (a/b);
+        document.getElementById('p').innerHTML=('thuong= ' +thuong);
+    }
     // a=prompt("nhập biến a: ")
     // b=prompt("nhập biến b: ")
     // if((a%b)==0)
@@ -14,6 +45,7 @@
     // else{
     //     alert("a không chia hết cho b")
     // }
+    // bài 2
     // let inputwidgh;
     // let inputheight;
     // inputwidgh=prompt("nhập biến width:");
@@ -22,6 +54,7 @@
     // let height= parseInt( inputheight);
     // let area= widgh*height;
     // document.write("area= " + area);
+    // bài 3
     // let inputmaths;
     // let inputphysical;
     // let inputchemistry;
@@ -55,9 +88,7 @@
     // let S=3.14 * R *R;
     // document.write("S=" +S);
     // document.write("C= " +C);
-    function a(){
-        console.log('hello');
-    }
+
 </script>
 </body>
 </html>
