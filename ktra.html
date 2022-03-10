@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="tung">
+<input type="text" id="th">
+<button onclick="h()">ấn</button>
+<p id="k"></p>
+<input type="text" id="thuan">
+<input type="text" id="hung">
+<button onclick="tich()">ấn</button>
+<h1 id="hoa"></h1>
+<script>
+    function h() {
+        let b= +document.getElementById('th').value;
+<!--        let a = + document.getElementById('tung').value;-->
+    //     let s = a * a;
+    //     let c= (a+b)*2;
+        let m=a**b;
+    //     document.getElementById('k').innerHTML = ('s=' + s);
+        // document.getElementById('k').innerHTML = ('c=' + c);
+        document.getElementById('k').innerHTML=('m='+m)
+    }
+    // let thuan=+prompt('nhập a');
+    // alert("thuan");
+// #2
+//     let a=+prompt('nhập a');
+//     let s=a*a;
+//     alert('s='+s);
+//     #3
+//     function tich() {
+//         let a = +document.getElementById('thuan').value;
+//         let b = +document.getElementById('hung').value;
+//         let s = a * b;
+//         document.getElementById('hoa').innerHTML = ('s=' + s);
+//     }
+//     let a=+prompt('nhập vào a');
+//     let b=+prompt('nhập vào b');
+//     let s=((a+b)*(b-a+1))/2;
+//     if (a>b){
+//         alert('s='+s);
+//     } else{
+//         alert('s='-s);
+//     }
+
+    // let a=+prompt('nhập năm a');
+    // let tk=a*100;
+    // if (a >0){
+    //     alert('tk'+tk);
+    // } else (a<= 0){
+    //     alert('');
+    // }
+    //
+
+    let a=+prompt('nhập a');
+    let b=+prompt('nhập b');
+    let c=+prompt('nhập c');
+    if(a==b||a==c||b==c){
+        alert('tam giác cân');
+    } else if (a==b==c){
+        alert('tam giác đều');
+    } else if ('a#b#c'){
+        alert('tam giác thường');
+    } else if ('a*a==(b*b+c*c)'){
+        alert('tam giác vuông');
+    } else{
+        alert('');
+    }
+</script>
+</body>
+</html>
